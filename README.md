@@ -11,3 +11,5 @@ place themes under ~/.themes
 place fastfetch, foot, labwc mako in ~/.config folder
 
 optional : waybar and wofi - here in my setup i have not used waybar and wofi, but can easily setup by making changes to rc.xml and autostart scripts inside labwc
+
+this config is using foot as terminal emulator, but install alacritty as it is fallback / default emulator for labwc
