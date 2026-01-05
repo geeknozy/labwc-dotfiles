@@ -174,7 +174,10 @@
 			<action name="SendToDesktop" to="4" />
 		</keybind>
 		<keybind key="W-Print">
-			<action name="Execute" command="~/.local/bin/scripts/screenshot.sh" />
+			<action name="Execute" command="~/.local/bin/scripts/screenshot.sh region"/>
+		</keybind>
+		<keybind key="W-C-Print">
+			<action name="Execute" command="~/.local/bin/scripts/screenshot.sh full"/>
 		</keybind>
 		<keybind key="XF86_AudioLowerVolume">
 			<action name="Execute" command="~/.local/bin/scripts/volume_notify.sh down" />
