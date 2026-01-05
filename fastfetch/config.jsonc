@@ -1,0 +1,32 @@
+{   
+    "logo": {
+        "type": "auto"
+    },
+    
+    "display": {
+        "separator": ": ",
+        "color": {
+            "keys": "cyan",
+            "title": "cyan"
+        }
+    },
+    
+    "modules": [
+        "title",
+        "separator",
+        // System Information
+        "os",
+        "host",
+        "kernel",
+        "uptime",
+        "packages",
+        "shell",
+        "terminal",
+        
+        // Resource Information
+        "cpu",
+        "gpu",
+        "memory",
+        "disk",
+    ]
+}

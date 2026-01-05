@@ -1,0 +1,18 @@
+# ~/.config/wofi/config
+
+# Modes to show: drun (Desktop files) and run (executables in $PATH)
+mode=drun,run
+
+# Disable icons for a minimal look (equivalent to Rofi's -no-icons)
+allow_images=false
+
+# Appearance settings (optional, but good for a Rofi-like feel)
+width=20%
+height=19%
+location=center
+
+# Case-insensitive matching
+insensitive=true
+
+# Hide scrollbar for a cleaner look
+hide_scroll=true

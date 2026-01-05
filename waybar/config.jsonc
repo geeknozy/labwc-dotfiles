@@ -1,0 +1,91 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "height": 30,
+  "min-height": 30,
+
+  "modules-left": [
+    "ext/workspaces",
+    "custom/separator",
+  ],
+
+  "modules-right": [
+    "network",
+    "custom/separator",
+    "cpu",
+    "custom/separator",
+    "memory",
+    "custom/separator",
+    "pulseaudio",
+    "custom/separator",
+    "clock#time",
+    "custom/separator",
+    "clock#date"
+  ],
+
+  "ext/workspaces": {
+    "format": "{name}",
+    "sort-by": "id",
+    "on-click": "activate",
+    "persistent-workspaces": {
+            "HDMI-A-1": [1, 2, 3, 4]
+        }
+},
+
+  "window": {
+    "format": "{title}"
+  },
+
+  "custom/separator": {
+    "format": " | ",
+    "tooltip": false
+  },
+
+  "network": {
+    "format-wifi": "NET {essid}",
+    "format-ethernet": "NET {ifname}",
+    "format-disconnected": "NET down"
+  },
+
+  "cpu": {
+    "interval": 1,
+    "format": "CPU {usage}%"
+  },
+
+  "memory": {
+    "interval": 1,
+    "format": "MEM {used}%"
+  },
+
+  "pulseaudio": {
+    "format": "VOL {volume}%",
+    "format-muted": "VOL muted",
+    "scroll-step": 5,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+  },
+
+  "clock#time": {
+    "format": "TIME {:%H:%M}",
+    "interval": 1,
+    "tooltip": false
+  },
+
+  "clock#date": {
+    "format": "DATE {:%d-%m-%Y}",
+    "tooltip": true,
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "mode": "month",
+      "weeks-pos": "right",
+      "format": {
+        "months": "<span>{}</span>",
+        "days": "<span>{}</span>",
+        "weeks": "<span>W{}</span>",
+        "weekdays": "<span>{}</span>",
+        "today": "<b><u>{}</u></b>"
+      }
+    }
+  }
+}

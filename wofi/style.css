@@ -1,0 +1,55 @@
+
+* {
+    font-family: Monospace;
+    font-size: 13px;
+}
+
+/* --- General Window and Background --- */
+window {
+    /* Main window background */
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;
+}
+
+/* --- Input Field (Search Box) --- */
+#input {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin: 0px;
+    border-bottom: 1px solid black; /* Separator line */
+}
+
+/* --- Entry List Container --- */
+#outer-box, #scroll {
+    background-color: black;
+    border: #9e9e9e;
+}
+
+/* --- Individual Entry in the list --- */
+#entry {
+    background-color: black;
+    color: #9e9e9e;
+    padding: 5px 8px;
+    margin: 0px;
+    border: none;
+    min-height: 10px;
+}
+
+/* --- Selected/Active Entry (The highlighted option) --- */
+#entry:selected {
+    /* Invert colors for selected item */
+    background-color: #9e9e9e;
+    color: black;
+    font-weight: Bold;
+}
+
+/* --- Prompts (e.g., "drun:") --- */
+#text {
+    background-color: black;
+    color: #cfcfcf;
+    font-weight: normal;
+}

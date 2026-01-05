@@ -1,0 +1,76 @@
+
+* {
+    font-family: "Monospace";
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: #000000;
+    color: #ffffff;
+    opacity: 1.0;
+    border: none;
+}
+
+#clock#time, #clock#date, #pulseaudio, #cpu, #memory, #network, #battery {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0 5px;
+}
+
+#clock#date .tooltip-format .calendar .today {
+    background-color: #f7768e; /* Highlight Color */
+    color: #1a1b26;           /* Text Color */
+    padding: 0 4px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+#workspaces {
+    background-color: #000000;
+    padding-left: 1px;
+}
+
+#workspaces button {
+    background-color: #4a4a4a;
+    color: #ffffff;
+    padding: 0 10px;
+    margin: 0 2px;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+#workspaces button.active, #workspaces button.focused {
+    color: #000000;
+    background-color: #e3e3e3;
+    border: 3px solid #000000; 
+    font-weight: bold;
+}
+
+#workspaces button.empty {
+    color: #ffffff;
+    background: #000000;
+}
+
+#workspaces button.visible {
+	color: #000000;
+    background-color: #e3e3e3;
+    border: 3px solid #ffffff; 
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    color: #000000;
+    background-color: #f38ba8;
+    border: 3px solid #f38ba8; 
+    font-weight: bold;
+}
+
+#workspaces button:hover {
+    background-color: #6c7086;
+    border: 1.5px solid #4a4a4a;
+}

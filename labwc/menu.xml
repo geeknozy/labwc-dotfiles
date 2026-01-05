@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+# #######################################################################################
+#	███╗   ██╗ ██████╗ ███████╗██╗   ██╗
+#	████╗  ██║██╔═══██╗╚══███╔╝╚██╗ ██╔╝
+#	██╔██╗ ██║██║   ██║  ███╔╝  ╚████╔╝ 
+#	██║╚██╗██║██║   ██║ ███╔╝    ╚██╔╝  
+#	██║ ╚████║╚██████╔╝███████╗   ██║   
+#	╚═╝  ╚═══╝ ╚═════╝ ╚══════╝   ╚═╝
+# #######################################################################################
+-->
+<openbox_menu>
+	<menu id="root-menu">
+		<!-- Applications -->
+		<item label="Firefox">
+			<action name="Execute" command="firefox" />
+		</item>
+		<item label="Chromium">
+			<action name="Execute" command="chromium" />
+		</item>
+		<item label="PcmanFM">
+			<action name="Execute" command="pcmanfm" />
+		</item>
+		<item label="Geany">
+			<action name="Execute" command="geany" />
+		</item>
+		<item label="nwg-look">
+			<action name="Execute" command="nwg-look" />
+		</item>
+		<item label="Viewnior">
+			<action name="Execute" command="viewnior" />
+		</item>
+		<!-- Divider -->
+		<separator />
+		<separator />
+		<!-- System actions -->
+		<item label="Reconfigure">
+			<action name="Reconfigure" />
+		</item>
+		<item label="Exit">
+			<action name="Exit" />
+		</item>
+		<item label="Reboot">
+			<action name="Execute" command="reboot" />
+		</item>
+		<item label="Poweroff">
+			<action name="Execute" command="systemctl -i poweroff" />
+		</item>
+	</menu>
+</openbox_menu>
+
+
+
