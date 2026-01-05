@@ -2,7 +2,9 @@
 wlroots-based window-stacking compositor for Wayland
 
 packages <br>
-```sudo pacman -Syu wayland labwc foot alacritty mako swaybg viewnior firefox chromium noto-fonts noto-fonts-cjk noto-fonts-emoji geany xcursor-vanilla-dmz gnome-themes-extra```
+```
+sudo pacman -Syu wayland labwc foot alacritty mako swaybg viewnior firefox chromium noto-fonts noto-fonts-cjk noto-fonts-emoji geany xcursor-vanilla-dmz gnome-themes-extra
+```
 
 place bin folder under ~/.local/
 place themes under ~/.themes
