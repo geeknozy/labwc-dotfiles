@@ -1,5 +1,5 @@
 # labwc-dotfiles
-wlroots-based window-stacking compositor for Wayland
+this repository contains the configuration files (.files) for labwc which is a wlroots-based window-stacking compositor for Wayland
 
 packages <br>
 ```
