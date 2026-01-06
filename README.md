@@ -1,5 +1,5 @@
 # labwc-dotfiles
-this repository contains the configuration files (.files) for labwc which is a wlroots-based window-stacking compositor for Wayland
+this repository contains the configuration files (.files) for labwc which is a wlroots-based window-stacking compositor for Wayland <br>
 
 packages <br>
 ```
@@ -14,7 +14,7 @@ this config is using foot as terminal emulator, but install alacritty as it is f
 
 Note: make all the scripts in bin folder executable
 
-optional : waybar and wofi - here in my setup i have not used waybar and wofi, but can easily setup by making changes to rc.xml and autostart scripts inside labwc
+optional : her i have also included support for waybar and wofi - here in my setup i have not used waybar and wofi, but can easily setup by making changes to rc.xml and autostart scripts inside labwc
 
 
 ![alt text](screen_20260105_212205.png)
