@@ -25,7 +25,7 @@ this config is using foot as terminal emulator, but install alacritty as it is f
 
 Note: make all the scripts in bin folder executable
 
-optional packages - waybar, wofi and greetd 
+optional packages - waybar & wofi
 
 I have also included configs for waybar and wofi - here in my setup i have not used waybar and wofi, but can easily setup by making changes to rc.xml and autostart scripts inside labwc
 
