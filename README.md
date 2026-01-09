@@ -3,7 +3,7 @@ this repository contains the configuration files (.files) for labwc which is a w
 
 packages <br>
 ```
-sudo pacman -Syu wayland labwc foot alacritty swaybg libnotify mako polkit-gnome viewnior firefox chromium noto-fonts noto-fonts-cjk noto-fonts-emoji geany xcursor-vanilla-dmz gnome-themes-extra acpid ibus dbus nwg-look intel-media-driver xdg-desktop-portal xdg-desktop-portal-wlr terminus-font vulkan-intel vulkan-mesa-layers zip unzip bash-completion grim slurp fastfetch
+sudo pacman -Syu wayland labwc foot alacritty swaybg libnotify mako polkit-gnome viewnior firefox chromium noto-fonts noto-fonts-cjk noto-fonts-emoji geany xcursor-vanilla-dmz gnome-themes-extra acpid ibus dbus nwg-look intel-media-driver xdg-desktop-portal xdg-desktop-portal-wlr terminus-font vulkan-intel vulkan-mesa-layers zip unzip bash-completion grim slurp fastfetch kanshi
 ```
 
 use labwc with systemd-logind instead of seatd, seatd is dependency for labwc, currently i see harmless warning spams in tty with seatd
