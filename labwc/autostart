@@ -1,5 +1,4 @@
-# Example autostart file
-# Set background color.
+# Autostart File
+kanshi >/dev/null 2>&1 &
 swaybg -i /home/nozy/Pictures/Wallpapers/labwc_bg_dark.png -m fill >/dev/null 2>&1 &
-# Launch a panel such as yambar or waybar.
 mako >/dev/null 2>&1 &
