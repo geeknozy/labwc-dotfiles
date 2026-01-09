@@ -8,6 +8,11 @@ sudo pacman -Syu wayland labwc foot alacritty swaybg libnotify mako polkit-gnome
 
 use labwc with systemd-logind instead of seatd, seatd is dependency for labwc, currently i see harmless warning spams in tty with seatd
 
+add below line in you ~/.bashrc
+```
+alias labwc='labwc 2>/dev/null'
+```
+
 ```
 sudo usermod -aG video,input <username>
 ```
