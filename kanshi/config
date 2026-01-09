@@ -1,0 +1,11 @@
+profile BENQ {
+    output HDMI-A-1 {
+        mode 2560x1440@60
+        position 0,0
+        scale 1
+    }
+    output HDMI-A-2 disable
+    output DP-1 disable
+    output DP-2 disable
+    output eDP-1 disable
+}
