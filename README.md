@@ -3,7 +3,7 @@ this repository contains the configuration files (.files) for labwc which is a w
 
 packages <br>
 ```
-sudo pacman -Syu wayland labwc foot alacritty swaybg libnotify mako polkit-gnome viewnior firefox chromium noto-fonts noto-fonts-cjk noto-fonts-emoji geany xcursor-vanilla-dmz gnome-themes-extra acpid ibus dbus nwg-look intel-media-driver xdg-desktop-portal terminus-font vulkan-intel vulkan-mesa-layers zip unzip bash-completion grim slurp xdg-desktop-portal-wlr greetd greetd-tuigreet
+sudo pacman -Syu wayland labwc foot alacritty swaybg libnotify mako polkit-gnome viewnior firefox chromium noto-fonts noto-fonts-cjk noto-fonts-emoji geany xcursor-vanilla-dmz gnome-themes-extra acpid ibus dbus nwg-look intel-media-driver xdg-desktop-portal xdg-desktop-portal-wlr terminus-font vulkan-intel vulkan-mesa-layers zip unzip bash-completion grim slurp greetd greetd-tuigreet fastfetch
 ```
 
 use labwc with systemd-logind instead of seatd, seatd is dependency for labwc, currently i see harmless warning spams in tty with seatd
@@ -20,7 +20,9 @@ this config is using foot as terminal emulator, but install alacritty as it is f
 
 Note: make all the scripts in bin folder executable
 
-optional : here i have also included support for waybar and wofi - here in my setup i have not used waybar and wofi, but can easily setup by making changes to rc.xml and autostart scripts inside labwc
+optional packages - waybar, wofi and greetd 
+
+I have also included configs for waybar and wofi - here in my setup i have not used waybar and wofi, but can easily setup by making changes to rc.xml and autostart scripts inside labwc
 
 greetd config in 
 ```
