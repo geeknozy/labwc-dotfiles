@@ -8,7 +8,9 @@ sudo pacman -Syu wayland labwc foot alacritty swaybg libnotify mako polkit-gnome
 
 use labwc with systemd-logind instead of seatd, seatd is dependency for labwc, currently i see harmless warning spams in tty with seatd
 
+```
 sudo usermod -aG video,input <username>
+```
 
 place bin folder under ~/.local/
 place themes under ~/.themes
