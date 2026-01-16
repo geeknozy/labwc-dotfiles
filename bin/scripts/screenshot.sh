@@ -1,24 +1,24 @@
 #!/bin/sh
 
 DIR="$HOME/Pictures/Screenshots"
-mkdir -p "$DIR"
+[ -d "$DIR" ] || mkdir -p "$DIR"
 
-FILE="$DIR/screen_$(date +%Y%m%d_%H%M%S).png"
+NAME="screen_$(date +%Y%m%d_%H%M%S).png"
+FILE="$DIR/$NAME"
+
+# Optimized flags: 
+# -c: Best color accuracy
+# -l 1: Lowest compression (Fastest save, same quality, larger file)
+GRIM_OPTS="-c -l 1"
 
 case "$1" in
   region)
-    REGION=$(slurp) || exit 0
-    grim -g "$REGION" -t png "$FILE" || {
-      notify-send "Screenshot failed"
-      exit 1
-    }
-    notify-send "Region screenshot saved" "$(basename "$FILE")"
+    if REGION=$(slurp); then
+      grim $GRIM_OPTS -g "$REGION" "$FILE" && notify-send "Region Saved" "$NAME"
+    fi
     ;;
   full)
-    grim -t png "$FILE" || {
-      notify-send "Screenshot failed"
-      exit 1
-    }
-    notify-send "Fullscreen screenshot saved" "$(basename "$FILE")"
+    # This will now be near-instant
+    grim $GRIM_OPTS "$FILE" && notify-send "Fullscreen Saved" "$NAME"
     ;;
 esac
