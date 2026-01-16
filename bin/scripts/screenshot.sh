@@ -6,7 +6,6 @@ DIR="$HOME/Pictures/Screenshots"
 NAME="screen_$(date +%Y%m%d_%H%M%S).png"
 FILE="$DIR/$NAME"
 
-# Optimized flags: 
 # -c: Best color accuracy
 # -l 1: Lowest compression (Fastest save, same quality, larger file)
 GRIM_OPTS="-c -l 1"
@@ -18,7 +17,7 @@ case "$1" in
     fi
     ;;
   full)
-    # This will now be near-instant
+
     grim $GRIM_OPTS "$FILE" && notify-send "Fullscreen Saved" "$NAME"
     ;;
 esac
