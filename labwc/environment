@@ -91,8 +91,3 @@ MOZ_ENABLE_WAYLAND=1             # Firefox native Wayland
 QT_QPA_PLATFORM=wayland          # Force Qt apps to Wayland
 GDK_BACKEND=wayland,x11          # Prefer Wayland for GTK
 SDL_VIDEODRIVER=wayland          # Games use Wayland natively
-
-# If using an Intel or AMD GPU, ensure hardware rendering
-WLR_RENDERER=gles2               # Use OpenGL ES 2 (fastest/most stable)
-# Note: If on a VM (VirtualBox), use: WLR_RENDERER=pixman
-
