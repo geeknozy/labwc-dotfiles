@@ -65,7 +65,7 @@ XCURSOR_SIZE=24
 ## then uncomment and adjust.
 ##
 
-# XDG_CURRENT_DESKTOP=labwc:wlroots
+XDG_CURRENT_DESKTOP=labwc:wlroots
 
 ##
 ## This causes a virtual output to be created automatically whenever there
