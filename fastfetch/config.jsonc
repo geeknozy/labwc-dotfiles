@@ -22,6 +22,7 @@
         "packages",
         "shell",
         "terminal",
+        "wm",
         
         // Resource Information
         "cpu",
