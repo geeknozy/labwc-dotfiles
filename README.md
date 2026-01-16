@@ -29,4 +29,4 @@ optional packages - waybar & wofi
 
 I have also included configs for waybar and wofi - here in my setup i have not used waybar and wofi, but can easily setup by making changes to rc.xml and autostart scripts inside labwc
 
-![alt text](screen_20260116_130757.png)
+![alt text](screen_20260116_131741.png)
