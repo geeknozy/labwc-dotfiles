@@ -1,11 +1,10 @@
 Config layout for ~/.config/labwc/
-- autostart
-- environment
-- menu.xml
-- rc.xml
-- shutdown
-- themerc-override
-- xinitrc
+- autostart - autostart certain programs before window manager starts
+- environment - system wide environment variable setting, eg: cursor themes etc
+- menu.xml - right click menu
+- rc.xml - base labwc config file
+- shutdown - shutdown tags
+- themerc-override - theme override
 
 See `man labwc-config and `man labwc-theme` for further details.
 
