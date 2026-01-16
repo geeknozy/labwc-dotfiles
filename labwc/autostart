@@ -1,5 +1,22 @@
-# Autostart File
+#!/bin/sh
+
+# 1. Update D-Bus environment (Essential for Polkit and Apps to work)
+# Labwc usually handles this, but adding it ensures compatibility with Flatpaks/GTK apps
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=labwc &
+
+# 2. Display Profile Management
 kanshi >/dev/null 2>&1 &
-swaybg -i /home/nozy/Pictures/Wallpapers/labwc_bg_dark.png -m fill >/dev/null 2>&1 &
+
+# 3. Background / Wallpaper
+# Use '&' so labwc continues to the next command
+swaybg -c "#282828" &
+
+# 4. Authentication Agent
+# Check your path: some distros use /usr/libexec/ instead of /usr/lib/
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# 5. Notifications
 mako >/dev/null 2>&1 &
+
+# 6. Optional: Status Bar (e.g., Waybar)
+# waybar &
