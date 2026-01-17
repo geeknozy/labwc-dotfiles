@@ -12,9 +12,9 @@
 <labwc_config>
 	<core>
 		<decoration>server</decoration>
-		<gap>0</gap>
+		<gap>2</gap>
 		<adaptiveSync>no</adaptiveSync>
-		<allowTearing>no</allowTearing>
+		<allowTearing>yes</allowTearing>
 		<autoEnableOutputs>yes</autoEnableOutputs>
 		<reuseOutputMode>no</reuseOutputMode>
 		<xwaylandPersistence>no</xwaylandPersistence>
