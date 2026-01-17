@@ -8,7 +8,7 @@ sudo pacman -Syu wayland wayland-protocols labwc xdg-desktop-portal xdg-desktop-
 
 use labwc with systemd-logind instead of seatd, seatd is dependency for labwc, currently i see harmless warning spams in tty with seatd
 
-add below line in you ~/.bashrc
+add below line in you ~/.bashrc if you want to supress warning or log messages in tty after logging out of labwc session
 ```
 alias labwc='labwc 2>/dev/null'
 ```
