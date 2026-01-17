@@ -347,7 +347,7 @@
 		</windowRule>
 	</windowRules>
 	<libinput>
-		<device>
+		<device category="touchpad">
 			<naturalScroll>yes</naturalScroll>
 		</device>
 	</libinput>
