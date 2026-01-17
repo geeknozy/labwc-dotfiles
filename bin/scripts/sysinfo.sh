@@ -5,7 +5,7 @@
 # - Instant CPU usage (delta-based)
 # - Accurate RAM usage
 # - CPU-preferred temperature
-# - Robust battery / volume / network
+# - Robust battery / wpctl volume / network
 # - Monospace-aligned Mako output
 #######################################
 
@@ -87,24 +87,28 @@ for b in /sys/class/power_supply/BAT*; do
         Charging)    S="+" ;;
         Discharging) S="-" ;;
         Full)        S="F" ;;
-        *)           S="?" ;;
+        *)           S="I" ;;
     esac
     BAT_VAL="$CAP%[$S]"
     break
 done
 
 ############################
-# 5. Volume (PulseAudio/PipeWire)
+# 5. Volume (WirePlumber wpctl)
 ############################
 VOL_VAL="N/A"
-if pactl info >/dev/null 2>&1; then
-    if pactl get-sink-mute @DEFAULT_SINK@ | grep -q yes; then
-        VOL_VAL="Muted"
-    else
-        VOL_VAL=$(pactl get-sink-volume @DEFAULT_SINK@ \
-            | awk -F'/' 'NR==1 {gsub(/ /,""); print $2}')
-        [ -z "$VOL_VAL" ] && VOL_VAL="0%"
-    fi
+# wpctl get-volume @DEFAULT_AUDIO_SINK@ returns "Volume: 0.XX [MUTED]"
+if command -v wpctl >/dev/null 2>&1; then
+    VOL_VAL=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '
+    {
+        # Check if [MUTED] exists in the output
+        if ($0 ~ /\[MUTED\]/) {
+            print "Muted"
+        } else {
+            # Multiply 0.XX by 100 to get percentage
+            printf "%d%%", $2 * 100
+        }
+    }')
 fi
 
 ############################
